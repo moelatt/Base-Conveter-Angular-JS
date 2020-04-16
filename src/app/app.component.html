@@ -1,0 +1,27 @@
+<div class="container my-5">
+  <div class="col-md-6 offset-md-2 table-bordered">
+    <h1 class="text-danger english text-center mb-5 font-italic">Base Conveter</h1>
+    <form action="" class="form" [formGroup]="form">
+      <div class="form-group form-inline">
+        <label for="" class="col-md-2 text-white">Binary</label>
+        <input type="text" class="form-control col-md-10" name="Binary" formControlName="Binary"
+          (ngModelChange) = "Binary_Change($event)">
+      </div>
+      <div class="form-group form-inline">
+        <label for="" class="col-md-2 text-white">Decimal</label>
+        <input type="text" class="form-control col-md-10" name="Decimal" formControlName="Decimal"
+          (ngModelChange) = "Decimal_Change($event)">
+      </div>
+      <div class="form-group form-inline">
+        <label for="" class="col-md-2 text-white">Octal</label>
+        <input type="text" class="form-control col-md-10" name="Octal" formControlName="Octal"
+        (ngModelChange) = "Octal_Change($event)">
+      </div>
+      <div class="form-group form-inline">
+        <label for="" class="col-md-2 text-white">Hexa</label>
+        <input type="text" class="form-control col-md-10" name="Hexa" formControlName="Hexa"
+        (ngModelChange) = "Hexa_Change($event)">
+      </div>
+    </form>
+  </div>
+</div>
